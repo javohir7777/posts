@@ -1,0 +1,51 @@
+@use "../abstract/colors";
+.section-cards {
+  padding: 94px 0 69px 0;
+  .card-popular {
+    padding: 0 0 64px 0;
+    color: colors.$bg-dark;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2px;
+  }
+  .row {
+    padding: 0 0 66px 0;
+    .card {
+      border: 1px solid colors.$bg-white;
+      &:hover {
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      }
+      .card-body {
+        .card-date {
+          color: colors.$text-kul;
+          //   font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+          span {
+            color: colors.$text-qizgish;
+          }
+        }
+        .card-title {
+          color: colors.$bg-dark;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 700;
+          letter-spacing: -1px;
+        }
+        .card-text {
+          color: colors.$bg-dark;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+          opacity: 0.699999988079071;
+        }
+      }
+    }
+  }
+}

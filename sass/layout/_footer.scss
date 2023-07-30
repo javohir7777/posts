@@ -1,0 +1,45 @@
+@use "../abstract/colors";
+footer {
+  background: colors.$bg-dark;
+  padding: 54px 0;
+  .footer__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .footer__text {
+      p {
+        color: colors.$text-color;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        opacity: 0.699999988079071;
+      }
+    }
+    .footer__icons {
+      display: flex;
+      gap: 26px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 460px) {
+  footer {
+    .footer__flex {
+      display: block;
+      .footer__text {
+        p {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+      .footer__icons {
+        justify-content: center;
+        padding: 10px 0 0 0;
+      }
+    }
+  }
+}

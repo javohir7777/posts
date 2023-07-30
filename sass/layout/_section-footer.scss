@@ -1,0 +1,67 @@
+@use "../abstract/colors";
+.section-footer {
+  .choose {
+    color: colors.$bg-dark;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2px;
+  }
+  .row {
+    padding: 71px 0 73px 0;
+    .card {
+      height: 250px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      &:hover {
+        background: colors.$bg-yellow;
+        border: 1px solid colors.$bg-yellow;
+        transition: 0.5s;
+      }
+      .card-body {
+        .card-img {
+          width: 48px;
+          height: 46.541px;
+          background: #fbf6ea;
+          border-radius: 10px;
+        }
+        .card-title {
+          padding: 15px 0 0 0;
+          color: colors.$bg-dark;
+          font-family: Inter;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 40px;
+          letter-spacing: -1px;
+        }
+        .card-text {
+          width: 232px;
+          color: colors.$text-grey;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .section-footer {
+    .row {
+      .col-12 {
+        a {
+          .card {
+            .card-body {
+              .card-text {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

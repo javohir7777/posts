@@ -1,0 +1,102 @@
+@use "../abstract/colors";
+header {
+  background: colors.$bg-dark;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+    .nav__icons {
+      display: none;
+      font-size: 25px;
+    }
+    .nav-menu__flex {
+      display: flex;
+      align-items: center;
+      gap: 83px;
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        padding: 16px 0 0 0;
+        gap: 24px;
+        .nav-menu__item {
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            color: colors.$text-color;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            &:hover {
+              transition: 1.5s;
+              color: colors.$text-dark;
+            }
+          }
+        }
+      }
+      .nav-menu__btn {
+        background: colors.$bg-white;
+        padding: 16px 48px;
+        align-items: flex-start;
+        gap: 12px;
+        color: colors.$bg-dark;
+        text-decoration: none;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    .nav {
+      .nav__brand {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 0 20px 0;
+        .nav__icons {
+          float: right;
+          display: inline;
+        }
+      }
+      .nav-menu__flex {
+        display: none;
+      }
+      .active {
+        display: flex;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  header {
+    .nav {
+      .nav-menu__flex {
+        display: none;
+        // .nav-menu {
+        //   display: block;
+        // }
+      }
+      .active {
+        display: block;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 305px) {
+  header {
+    .nav {
+      .nav-menu__flex {
+        .nav-menu {
+          display: block;
+        }
+      }
+    }
+  }
+}

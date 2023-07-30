@@ -1,0 +1,55 @@
+.register {
+  padding: 69px 0 158px 0;
+  .register-text {
+    padding: 0 0 40px 0;
+    color: #232536;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -2px;
+  }
+  .register-form {
+    text-align: center;
+    .register-input {
+      margin-top: 20px;
+      width: 768px;
+      padding: 24px;
+      align-items: center;
+      outline: none;
+    }
+  }
+  .register-btn {
+    text-decoration: none;
+    width: 768px;
+    height: 64px;
+    background-color: #ffd050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px auto 0;
+    color: #232536;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .register {
+    .register-form {
+      .register-input {
+        width: 100%;
+      }
+    }
+    .register-btn {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .register {
+    padding: 50px 0 100px 0;
+  }
+}

@@ -13,7 +13,7 @@ navIcons.addEventListener("click", () => {
 function getBusiness(response) {
   let str = "";
   str += `
-    <h1 class="business-h1">Category: ${response.data.category}, Id: ${response.data.id}</h1>
+    <h1 class="business-h1">Category: ${response.data.category}</h1>
         <p class="business-p">
         ${response.data.title}
         </p>

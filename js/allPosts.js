@@ -2,6 +2,7 @@ const url = "https://64a6fca7096b3f0fcc80ef97.mockapi.io/posts";
 
 const navIcons = document.querySelector(".nav__icons");
 const navMenuFlex = document.querySelector(".nav-menu__flex");
+const searchInput = document.querySelector(".form");
 
 navIcons.addEventListener("click", () => {
   navMenuFlex.classList.toggle("active");
